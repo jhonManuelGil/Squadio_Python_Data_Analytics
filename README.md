@@ -1,10 +1,13 @@
 
-![Squadio - Python Data Analytics](Squadio%20-%20Python%20Data%20Analytics.jpg)
-# Squadio_Python_Data_Analytics
+
+
+![Squadio - Python Data Analytics](/Squadio%20-%20Python%20Data%20Analytics.jpg )
+
+# DIO | 📊 Bootcamp Quadio Python Data Analytics 
 
 
 
-## Detalhes do bootcamp 68 hrs
+## 🖥️ Detalhes do bootcamp 68 hrs 
 Num mundo data-driven quem sabe manipular e apresentar dados comanda!
 
 Participe do bootcamp Coding The Future Squadio - Python Data Analytics e aprenda a manipular, gerenciar e apresentar grandes massas de dados através de habilidades práticas para construir dashboards funcionais.
@@ -13,7 +16,7 @@ Aprenda o processo de instalação, conceitos de funções Python e os seus prin
 
 Nesta trilha, você vai desenvolver suas habilidades com projetos práticos, desafios de códigos e mentorias com experts da DIO e, além disso, ficará disponível na Talent Match para tech recrutadores de empresas parceiras que procuram profissionais com esse perfil.
 
-## Atividades:
+## 🕵️‍♂️ Atividades:
 - Mentorias (Live): Momento em que você irá se inspirar nos talentos das empresas mais inovadoras do mundo, podendo interagir ao longo da live e até fazer perguntas sobre carreira e tecnologia.
 
 - Desafio de Código: Coloque em prática todo o conhecimento adquirido nas aulas e teste o seu conhecimento na resolução de um desafio.
@@ -22,7 +25,7 @@ Nesta trilha, você vai desenvolver suas habilidades com projetos práticos, des
 
 - Ranking: Cada bootcamp possui um ranking com premiações exclusivas, onde você pontua de acordo com as interações que você realiza em Fórum e Rooms, dos acertos que você tem em questionários e da qualidade do código que você desenvolveu nos desafios.
 
-## Ferramentas para o seu aprendizado:
+## 📌Ferramentas para o seu aprendizado:
 Fórum: Espaço para você interagir e tirar suas dúvidas técnicas com a nossa comunidade.
 
 - Rooms: Espaço para você conversar com outros matriculados no bootcamp e aumentar o seu networking.
