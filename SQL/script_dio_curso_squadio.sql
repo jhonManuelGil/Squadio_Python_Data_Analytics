@@ -78,9 +78,9 @@ INSERT INTO reservas (id, id_usuario, id_destino, data, status) VALUES
 select * from reservas;
 
 
+-- ==================================== Operação de Select===================================================
 
 
--- Operação de Select
 
 select * from usuario;
 
@@ -116,7 +116,9 @@ WHERE email = 'pedro@example.com';
 
 select * from destinos;
 
---- Alterando e Excluindo Tabelas
+
+-- ==================================== Alterando e Excluindo Tabelas ===================================================
+--- 
 
 
 CREATE TABLE usuarios_nava(
@@ -220,18 +222,31 @@ INSERT INTO reservas (id, id_usuario, id_destino, data, status) VALUES
 
 
 
+-- ==================================== Normalização de Dados ===================================================
+
+SELECT * FROM usuarios;
+
+ALTER TABLE usuarios
+ADD rua VARCHAR(100),
+ADD numero_complemento VARCHAR(10),
+ADD ciudade VARCHAR(10),
+ADD estado VARCHAR(10);
+
+-- Normalização TABLE
+
+UPDATE usuarios
+SET 
+    rua = split_part(endereco, ',', 1),
+    numero_complemento = split_part(endereco, ',', 2),
+    ciudade = split_part(endereco, ',', 3),
+    estado = split_part(endereco, ',', 4);
 
 
 
+ALTER TABLE usuarios 
+DROP COLUMN endereco;
 
-
-
-
-
-
-
-
-
+SELECT * FROM usuarios;
 
 
 
