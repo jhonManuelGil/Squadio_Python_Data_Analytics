@@ -1,3 +1,4 @@
+--- Operações CRUD: Insert e SELECT
 
 CREATE TABLE usuario (
     id INT,
@@ -94,34 +95,61 @@ select * from usuario
 where id = 1 or nome like '%M%';
 
 
+select * from usuario
+where id = 1 or nome like '%a';
+
+select * from usuario
+where id = 1 or nome like '%M%';
 
 
 
+select * from usuario;
+
+ 
+UPDATE usuario
+SET id = 4
+WHERE email = 'pedro@example.com';
 
 
 
+select * from destinos;
+
+--- Alterando e Excluindo Tabelas
 
 
+CREATE TABLE usuarios_nava(
+    id INT,
+	nome varchar(255) NOT NULL,
+	email varchar(255) NOT NULL,
+	data_nacimento DATE NOT NULL,
+	endereco VARCHAR(100) NOT NULL
+);
 
 
+COMMENT ON COLUMN usuarios_nava.nome IS 'Nome de usuarios_nava';
+COMMENT ON COLUMN usuarios_nava.email IS 'Enderaço de Email do usuarios_nava';
+COMMENT ON COLUMN usuarios_nava.data_nacimento IS 'Data de nacimiento usuarios_nava';
+COMMENT ON COLUMN usuarios_nava.endereco IS 'Endereço do usuarios_nava';
 
 
+select * from usuarios_nava;
 
 
+-- emigraçao dos dato da Table
+INSERT INTO usuarios_nava (id, nome, email, data_nacimento, endereco)
+SELECT id, nome, email, data_nacimento, endereco
+FROM usuario;
+
+-- elimina a table antigua
+DROP TABLE usuario;
+
+-- Alterar o nome de uma tabela
+ALTER TABLE usuarios_nava RENAME TO usuarios;
+
+SELECT * FROM usuarios;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+ALTER TABLE usuarios ALTER COLUMN endereco TYPE VARCHAR(350);
 
 
 
